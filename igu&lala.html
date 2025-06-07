@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Igor & Lahys 💖</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff0f5;
+      color: #333;
+      text-align: center;
+    }
+    header {
+      background-color: #ffb6c1;
+      padding: 20px;
+      font-size: 2em;
+      font-weight: bold;
+    }
+    .counter {
+      margin: 20px 0;
+      font-size: 1.5em;
+      color: #8b0000;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 20px;
+    }
+    .gallery img {
+      max-width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    audio {
+      margin: 20px auto;
+      display: block;
+    }
+    footer {
+      margin: 30px 0;
+      font-size: 1.2em;
+      color: #dc143c;
+    }
+  </style>
+</head>
+<body>
+  <header>Igor & Lahys 💕</header>
+
+  <div class="counter">
+    Estamos juntos há <span id="daysTogether">...</span> dias 💘
+  </div>
+
+  <audio controls autoplay loop>
+    <source src="Ruth B. - Dandelions (Lyrics).mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio.
+  </audio>
+
+  <div class="gallery">
+    <img src="Igu e Lala BH maio 2025.jpg" alt="Foto 1">
+    <img src="igu e lala cwb mem ucraniano.jpeg" alt="Foto 2">
+    <img src="igu e lala jd bot.jpeg" alt="Foto 3">
+    <img src="Igu e lala.png" alt="Foto 4">
+    <img src="Igu e Lala BH maio 2025.jpg" alt="Foto 5">
+  </div>
+
+  <footer>
+    Igor e Lahys. Te amo &lt;3
+  </footer>
+
+  <script>
+    const startDate = new Date("2024-08-03T00:00:00");
+    const today = new Date();
+    const diffTime = Math.abs(today - startDate);
+    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+    document.getElementById("daysTogether").textContent = diffDays;
+  </script>
+</body>
+</html>
